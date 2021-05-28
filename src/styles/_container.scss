@@ -1,0 +1,49 @@
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+
+  &-small,
+  &-medium,
+  &-large,
+  &-x-large {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  &-medium {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @include respond-above(sm) {
+    max-width: 540px;
+    &-small {
+      max-width: 540px;
+    }
+  }
+  @include respond-above(md) {
+    max-width: 720px;
+    &-small,
+    &-medium {
+      max-width: 720px;
+    }
+  }
+  @include respond-above(lg) {
+    max-width: 960px;
+    &-small,
+    &-medium,
+    &-large {
+      max-width: 960px;
+    }
+  }
+  @include respond-above(xl) {
+    max-width: 1140px;
+    &-small,
+    &-medium,
+    &-large,
+    &-x-large {
+      max-width: 1140px;
+    }
+  }
+}
