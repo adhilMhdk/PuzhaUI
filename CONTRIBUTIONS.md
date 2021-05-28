@@ -33,3 +33,5 @@ npm start
 ```
 <script src="./puzha.ui.js"></script>
 ```
+
+> This html files purged on production
