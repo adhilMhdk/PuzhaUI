@@ -1,4 +1,4 @@
-.btn {
+.p-btn {
     border: none;
     border-radius: 2px;
     background-color: #fff;
@@ -12,20 +12,21 @@
     font-weight: 500;
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
     text-transform: uppercase;
+    
   }
   
-  .btn svg{
+  .p-btn svg{
     margin-bottom: -2px;
     padding-left: 5px;
   }
   
-  .btn.play svg,.btn.pause svg,.btn.add svg,.btn.minus svg{
+  .p-btn.p-btn-play svg,.p-btn.p-btn-pause svg,.p-btn.p-btn-add svg,.p-btn.p-btn-minus svg{
     margin-bottom: -2px;
     padding-left: 0;
   }
   
   
-  .btn span {
+  .p-btn span {
     position: absolute;
     border-radius: 50%;
     /* To make it round */
@@ -41,22 +42,22 @@
   
   /*button light*/
   
-  .btn.light {
+  .p-btn.p-btn-light {
     background-color: #e2e2e2;
     transition: 0.2s;
   }
-  .btn.light:hover {
+  .p-btn.p-btn-light:hover {
     background-color: #bbbbbb;
     transition: 0.2s;
   }
   
   /*button dark*/
-  .btn.dark {
+  .p-btn.p-btn-dark {
     background-color: #3f3f3f;
     color: white;
     transition: 0.2s;
   }
-  .btn.dark:hover {
+  .p-btn.p-btn-dark:hover {
     background-color: #a7a7a7;
     transition: 0.2s;
   }
@@ -64,12 +65,12 @@
   
   
   /*button primary*/
-  .btn.primary {
-    background-color: #007bff;
+  .p-btn.p-btn-primary {
+    background-color: #1976d2;
     color: white;
     transition: 0.2s;
   }
-  .btn.primary:hover {
+  .p-btn.p-btn-primary:hover {
     background-color: #0060c7;
     transition: 0.2s;
   }
@@ -77,101 +78,400 @@
   
   
   /*button secondary*/
-  .btn.secondary {
-    background-color: #6c757d;
+  .p-btn.p-btn-secondary {
+    background-color: rgb(220, 0, 78);
     color: white;
     transition: 0.2s;
   }
-  .btn.secondary:hover {
-    background-color: #43494e;
+  .p-btn.p-btn-secondary:hover {
+    background-color: rgb(196, 0, 68);
     transition: 0.2s;
   }
   
   
   /*button success*/
-  .btn.success {
+  .p-btn.p-btn-success {
     background-color: #13a700;
     color: white;
     transition: 0.2s;
   }
-  .btn.success:hover {
+  .p-btn.p-btn-success:hover {
     background-color: #0d7200;
     transition: 0.2s;
   }
   
   /*button danger*/
-  .btn.danger {
+  .p-btn.p-btn-danger {
     background-color: #dc3545;
     color: white;
     transition: 0.2s;
   }
-  .btn.danger:hover{
+  .p-btn.p-btn-danger:hover{
     background-color: #a81a28;
     transition: 0.2s;
   }
   
   
   /*button warning*/
-  .btn.warning {
+  .p-btn.p-btn-warning {
     background-color: #ffc107;
     color: white;
     transition: 0.2s;
   }
-  .btn.warning:hover {
+  .p-btn.p-btn-warning:hover {
     background-color: #bd9008;
     transition: 0.2s;
   }
   
   /*button info*/
-  .btn.info {
+  .p-btn.p-btn-info {
     background-color: #17a2b8;
     color: white;
     transition: 0.2s;
   }
-  .btn.info:hover {
+  .p-btn.p-btn-info:hover {
     background-color: #0f7686;
     transition: 0.2s;
   }
   
   /*button orange*/
-  .btn.orange {
+  .p-btn.p-btn-orange {
     background-color: orange;
     color: white;
     transition: 0.2s;
   }
-  .btn.orange:hover {
+  .p-btn.p-btn-orange:hover {
     background-color: rgb(204, 133, 2);
     transition: 0.2s;
   }
   
   /*button brown*/
-  .btn.brown {
+  .p-btn.p-btn-brown {
     background-color: brown;
     color: white;
     transition: 0.2s;
   }
-  .btn.brown:hover {
+  .p-btn.p-btn-brown:hover {
     background-color: rgb(124, 23, 23);
     transition: 0.2s;    
   }
   
   /*button skyblue*/
-  .btn.skyblue {
-    background-color: skyblue;
+  .p-btn.p-btn-skyblue {
+    background-color: rgb(0, 181, 253);
     color: white;
     transition: 0.2s;  
   }
-  .btn.skyblue:hover {
+  .p-btn.p-btn-skyblue:hover {
     background-color: rgb(67, 141, 170);
     transition: 0.2s;      
   }
-  .btn.round{
+  .p-btn.p-btn-round{
     border-radius: 50%;
   }
-  .btn.disable{
+  .p-btn.p-btn-disable{
     opacity: 40%;
   }
   
+
+
+
+  //none backgrounded buttons
+  
+
+ /*button light*/
+  
+.p-btn.p-btn-none-light {
+  background-color: #e2e2e200;
+  font-weight: 600;
+  transition: 0.2s;
+}
+.p-btn.p-btn-none-light:hover {
+  background-color: #d4d4d4;
+  transition: 0.2s;
+}
+
+
+/*button primary*/
+.p-btn.p-btn-none-primary {
+  background-color: #1976d200;
+  color:#1976d2;
+  font-weight: 600;
+  transition: 0.2s;
+}
+.p-btn.p-btn-none-primary:hover {
+  background-color: #1976d21f;
+  transition: 0.2s;
+}
+
+
+
+/*button secondary*/
+.p-btn.p-btn-none-secondary {
+  background-color: rgba(220, 0, 77, 0);
+  color: rgb(220, 0, 78);
+  transition: 0.2s;
+  font-weight: 600;
+}
+.p-btn.p-btn-none-secondary:hover {
+  background-color: rgba(220, 0, 77, 0.096);
+  transition: 0.2s;
+}
+
+
+/*button success*/
+.p-btn.p-btn-none-success {
+  background-color: #13a70000;
+  color: #13a700;
+  font-weight: 600;
+  transition: 0.2s;
+}
+.p-btn.p-btn-none-success:hover {
+  background-color: #13a7001e;
+  transition: 0.2s;
+}
+
+/*button danger*/
+.p-btn.p-btn-none-danger {
+  background-color: #dc354600;
+  color: #dc3545;
+  transition: 0.2s;
+  font-weight: 600;
+}
+.p-btn.p-btn-none-danger:hover{
+  background-color: #dc354618;
+  transition: 0.2s;
+}
+
+
+/*button warning*/
+.p-btn.p-btn-none-warning {
+  background-color: #ffc10700;
+  color: #ffc107;
+  transition: 0.2s;
+  font-weight: 600;
+}
+.p-btn.p-btn-none-warning:hover {
+  background-color: #ffc10713;
+  transition: 0.2s;
+}
+
+/*button info*/
+.p-btn.p-btn-none-info {
+  background-color: #17a3b800;
+  color: #17a2b8;
+  transition: 0.2s;
+  font-weight: 600;
+}
+.p-btn.p-btn-none-info:hover {
+  background-color: #17a3b81e;
+  transition: 0.2s;
+}
+
+/*button orange*/
+.p-btn.p-btn-none-orange {
+  background-color: rgba(255, 166, 0, 0);
+  color: orange;
+  font-weight: 600;
+  transition: 0.2s;
+}
+.p-btn.p-btn-none-orange:hover {
+  background-color: rgba(204, 133, 2, 0.082);
+  transition: 0.2s;
+}
+
+/*button brown*/
+.p-btn.p-btn-none-brown {
+  background-color: rgba(165, 42, 42, 0);
+  color: brown;
+  font-weight: 600;
+  transition: 0.2s;
+}
+.p-btn.p-btn-none-brown:hover {
+  background-color: rgba(124, 23, 23, 0.089);
+  transition: 0.2s;    
+}
+
+/*button skyblue*/
+.p-btn.p-btn-none-skyblue {
+  font-weight: 600;
+  background-color: rgba(135, 207, 235, 0);
+  color: rgb(0, 181, 253);
+  transition: 0.2s;  
+}
+.p-btn.p-btn-none-skyblue:hover {
+  background-color: rgba(67, 141, 170, 0.096);
+  transition: 0.2s;      
+}
+.p-btn.p-btn-none-round{
+  border-radius: 50%;
+}
+
+
+
+//outline backgrounded buttons
+  
+
+ /*button light*/
+  
+ .p-btn.p-btn-outline-light {
+  background-color: #e2e2e200;
+  font-weight: 600;
+  transition: 0.2s;
+  border: solid;
+  border-width: 1px;
+  border-color: rgba(0, 0, 0, 0.384);
+}
+.p-btn.p-btn-outline-light:hover {
+  background-color: #d4d4d4;
+  transition: 0.2s;
+}
+
+
+/*button primary*/
+.p-btn.p-btn-outline-primary {
+  background-color: #1976d200;
+  color:#1976d2;
+  font-weight: 600;
+  transition: 0.2s;
+  border: solid;
+  border-width: 1px;
+  border-color: #1976d270;
+}
+.p-btn.p-btn-outline-primary:hover {
+  background-color: #1976d21f;
+  transition: 0.2s;
+}
+
+
+
+/*button secondary*/
+.p-btn.p-btn-outline-secondary {
+  background-color: rgba(220, 0, 77, 0);
+  color: rgb(220, 0, 78);
+  transition: 0.2s;
+  font-weight: 600;
+  border: solid;
+  border-width: 1px;
+  border-color: rgba(220, 0, 77, 0.548);
+}
+.p-btn.p-btn-outline-secondary:hover {
+  background-color: rgba(220, 0, 77, 0.096);
+  transition: 0.2s;
+}
+
+
+/*button success*/
+.p-btn.p-btn-outline-success {
+  background-color: #13a70000;
+  color: #13a700;
+  font-weight: 600;
+  transition: 0.2s;
+  border: solid;
+  border-width: 1px;
+  border-color: #13a7007a;
+}
+.p-btn.p-btn-outline-success:hover {
+  background-color: #13a7001e;
+  transition: 0.2s;
+}
+
+/*button danger*/
+.p-btn.p-btn-outline-danger {
+  background-color: #dc354600;
+  color: #dc3545;
+  transition: 0.2s;
+  font-weight: 600;
+  border: solid;
+  border-width: 1px;
+  border-color: #dc35467a;
+}
+.p-btn.p-btn-outline-danger:hover{
+  background-color: #dc354618;
+  transition: 0.2s;
+}
+
+
+/*button warning*/
+.p-btn.p-btn-outline-warning {
+  background-color: #ffc10700;
+  color: #ffc107;
+  transition: 0.2s;
+  font-weight: 600;
+  border: solid;
+  border-width: 1px;
+  border-color: #ffc10777;
+}
+.p-btn.p-btn-outline-warning:hover {
+  background-color: #ffc10713;
+  transition: 0.2s;
+}
+
+/*button info*/
+.p-btn.p-btn-outline-info {
+  background-color: #17a3b800;
+  color: #17a2b8;
+  transition: 0.2s;
+  font-weight: 600;
+  border: solid;
+  border-width: 1px;
+  border-color: #17a3b873;
+}
+.p-btn.p-btn-outline-info:hover {
+  background-color: #17a3b81e;
+  transition: 0.2s;
+}
+
+/*button orange*/
+.p-btn.p-btn-outline-orange {
+  background-color: rgba(255, 166, 0, 0);
+  color: orange;
+  font-weight: 600;
+  transition: 0.2s;
+  border: solid;
+  border-width: 1px;
+  border-color: rgba(255, 166, 0, 0.473);
+}
+.p-btn.p-btn-outline-orange:hover {
+  background-color: rgba(204, 133, 2, 0.082);
+  transition: 0.2s;
+}
+
+/*button brown*/
+.p-btn.p-btn-outline-brown {
+  background-color: rgba(165, 42, 42, 0);
+  color: brown;
+  font-weight: 600;
+  transition: 0.2s;
+  border: solid;
+  border-width: 1px;
+  border-color: rgba(165, 42, 42, 0.459);
+}
+.p-btn.p-btn-outline-brown:hover {
+  background-color: rgba(124, 23, 23, 0.089);
+  transition: 0.2s;    
+}
+
+/*button skyblue*/
+.p-btn.p-btn-outline-skyblue {
+  font-weight: 600;
+  background-color: rgba(135, 207, 235, 0);
+  color: rgb(0, 183, 255);
+  transition: 0.2s;  
+  border: solid;
+  border-width: 1px;
+  border-color: rgba(135, 207, 235, 0.486);
+}
+.p-btn.p-btn-outline-skyblue:hover {
+  background-color: rgba(67, 141, 170, 0.096);
+  transition: 0.2s;      
+}
+.p-btn.p-btn-outline-round{
+  border-radius: 50%;
+}
+
+
+
   
   /* Add animation for buttons*/
   @keyframes ripple {
